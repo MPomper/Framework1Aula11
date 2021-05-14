@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Formulario</title>
+</head>
+<body>
+    <div>
+        <h1 class="Title">Supermercado Central</h1>
+
+        <p class="Message">Para um planeta melhor, informe a quantidade de itens comprados e a quantidade a ser dividida por sacola plastica</p>
+        <table class="TableBag">
+            <form id="frmBags">
+            <tr>
+                <td class="BagDry">
+                    <p>Informe a quantidade de itens secos a serem colocados por sacola:
+                    <input type="text" id="QuantityPutDry" name="QuantityPutDry" onmouseover="OnHoverMouse('DestaqueDry')" onmouseout="OnOutMouse('DestaqueDry')">
+                    <span id="errormsgQuantityPutDry"></span>
+                    <span id="DestaqueDry">Maximize o numero por sacola</span></p>
+                    <p>Informe a quantidade de itens secos a serem divididos nas sacola:
+                    <input type="text" id="QuantityDivisionDry" name="QuantityDivisionDry" placeholder="Quantidades de itens secos">
+                    <span id="errormsgQuantityDivisionDry"></span></p>
+                </td>
+            </tr>
+            <tr>
+                <td class="BagWet">
+                    <p>Informe a quantidade de itens molhados a serem colocados por sacola:
+                    <input type="text" id="QuantityPutWet" name="QuantityPutWet" onmouseover="OnHoverMouse('DestaqueWet')" onmouseout="OnOutMouse('DestaqueWet')">
+                    <span id="errormsgQuantityPutWet"></span>
+                    <span id="DestaqueWet">Maximize o numero por sacola</span></p>
+                    <p>Informe a quantidade de itens molhados a serem divididos nas sacola:
+                    <input type="text" id="QuantityDivisionWet" name="QuantityDivisionWet" placeholder="Quantidades de itens molhados">
+                    <span id="errormsgQuantityDivisionWet"></span></p>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td class="BagFragile">
+                    <p>Informe a quantidade de itens frageis a serem colocados por sacola:
+                    <input type="text" id="QuantityPutFragile" name="QuantityPutFragile" onmouseover="OnHoverMouse('DestaqueFragile')" onmouseout="OnOutMouse('DestaqueFragile')">
+                    <span id="errormsgQuantityPutFragile"></span>
+                    <span id="DestaqueFragile">Maximize o numero por sacola</span></p>
+                    <p>Informe a quantidade de itens frageis a serem divididos nas sacola:
+                    <input type="text" id="QuantityDivisionFragile" name="QuantityDivisionFragile" placeholder="Quantidades de itens frageis">
+                    <span id="errormsgQuantityDivisionFragile"></span></p>
+                </td>
+            </tr>
+            </form>
+            <td class="Submit">
+                <button type="button" id="Calcular" name="Calcular">Calcular</button>
+            </td>
+        </table>
+    </div>
+
+    <footer>
+        <script type="text/javascript" src="../JS/jquery-3.6.0.js"></script>
+        <script type="text/javascript" src="../JS/Supermercado.js"></script>
+        <link href="../CSS/Style.css" rel="stylesheet" type="text/css" />
+    </footer>
+</body>
+</html>
